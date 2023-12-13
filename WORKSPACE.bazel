@@ -1,0 +1,7 @@
+workspace(name = "rules_rust_test_rustfmt")
+local_repository(
+    name = "rules_rust",
+    path = "/usr/local/google/home/msta/chromiumos_head/bazel_deps/rules_rust",
+)
+load("@rules_rust//rust:repositories.bzl", "rust_repositories")
+rust_repositories()
